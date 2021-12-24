@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  // const number: number = 0;
+  const [number, setNumber] = useState<number | string>(5);
+  // const [number, setNumber] = useState<number>(5);
+  // const [number, setNumber] = useState<any>(5);
+
+  const changeNumber = () => {
+    setNumber(3)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +27,7 @@ function App() {
         >
           Learn React
         </a>
+        <div onClick={changeNumber}>{number}</div>
       </header>
     </div>
   );
