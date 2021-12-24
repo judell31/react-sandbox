@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function ReactSandbox() {
   // const number: number = 0;
   const [number, setNumber] = useState<number | string>(5);
   // const [number, setNumber] = useState<number>(5);
@@ -11,6 +11,8 @@ function App() {
   const changeNumber = () => {
     setNumber(3)
   }
+
+
 
   return (
     <div className="App">
@@ -33,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default ReactSandbox;
