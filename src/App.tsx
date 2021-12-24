@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function ReactSandbox() {
+function App() {
   // const number: number = 0;
   const [number, setNumber] = useState<number | string>(5);
   // const [number, setNumber] = useState<number>(5);
@@ -35,4 +35,4 @@ function ReactSandbox() {
   );
 }
 
-export default ReactSandbox;
+export default App;
